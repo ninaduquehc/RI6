@@ -61,7 +61,8 @@ let iniciar = () => {
     leitor.question('Escolha uma opção: ', (opcao) => {
         let calculo: Calculo;
 
-        switch (opcao) {
+        switch (opcao.trim().toLowerCase()) {
+            case 'matemática': console.log('\n "A matemática é o alfabeto com o qual Deus escreveu o universo." - Galileu Galilei'); iniciar(); return;
             case '1': calculo = new Soma(); break;
             case '2': calculo = new Subtracao(); break;
             case '3': calculo = new Multiplicacao(); break;
