@@ -3,6 +3,7 @@ export default class Bhaskara {
         if (a === 0) {
             throw new Error('"a" não pode ser zero em uma equação do 2º grau.');
         }
+
         const delta = b ** 2 - 4 * a * c;
         if (delta < 0) return [];
 
